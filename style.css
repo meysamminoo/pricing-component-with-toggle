@@ -1,0 +1,236 @@
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-display: auto;
+  font-weight: 700;
+  src: url(fonts/Montserrat-Bold.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 62.5%;
+  min-height: 37.5rem;
+  background: url(images/bg-top.svg) right top no-repeat,
+    url(images/bg-bottom.svg) left bottom no-repeat;
+  background-color: #f7f7fe;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #6e728e;
+}
+.title-page {
+  font-size: 3.2rem;
+  line-height: 3.9rem;
+  text-align: center;
+}
+/* switch  box */
+.toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+}
+.toggle-text {
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+  opacity: 0.5;
+}
+/* switch label  */
+.switch {
+  width: 5.6rem;
+  height: 3.2rem;
+  position: relative;
+  margin: 0 2rem;
+  display: inline-block;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.switch:hover {
+  opacity: 0.5;
+}
+/* remove default checkbox */
+#switch {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+  background: linear-gradient(135deg, #a2a7f0 0%, #696edd 100%);
+  border-radius: 1.6rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider::before {
+  content: "";
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  border-radius: 50%;
+  left: 0.4rem;
+  top: 0.4rem;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+/* move switch */
+input:checked + .slider:before {
+  -webkit-transform: translateX(2.4rem);
+  -ms-transform: translateX(2.4rem);
+  transform: translateX(2.4rem);
+}
+/* main content */
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* price component */
+.price-box {
+  width: 35rem;
+  height: 45rem;
+  background-color: #fff;
+  box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+}
+.left {
+  border-radius: 1rem 0 0 1rem;
+}
+.center {
+  height: 50rem;
+  background: linear-gradient(135deg, #a2a7f0 0%, #696edd 100%);
+  border-radius: 1rem;
+  color: #fff;
+}
+.right {
+  border-radius: 0 1rem 1rem 0;
+}
+/* datails component */
+.head-component,
+.main-component,
+.price,
+.footer-component {
+  width: 100%;
+  text-align: center;
+}
+.type {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+.price {
+  color: #4a4d60;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.price-month {
+  display: none;
+}
+.price p {
+  font-size: 7.2rem;
+  line-height: 7.1rem;
+  letter-spacing: -2.16px;
+}
+.price span {
+  font-size: 4rem;
+  line-height: 4.9rem;
+  margin-right: 0.5rem;
+}
+.nav {
+  list-style: none;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+}
+.property {
+  border-bottom: 1px solid rgba(110, 114, 142, 0.25);
+  padding: 1rem 0;
+}
+.property:first-child {
+  border-top: 1px solid rgba(110, 114, 142, 0.25);
+}
+
+.text-white {
+  color: #fff;
+}
+.border-white {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+.border-white:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+/* footer and button and hover button */
+.btn {
+  width: 100%;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #a2a7f0 0%, #696edd 100%);
+  border-radius: 0.6rem;
+  padding: 1.4rem 0;
+  outline: none;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  font-weight: 700;
+}
+.btn-custom {
+  border: 1px solid transparent;
+  background: #fff;
+  color: #6d72de;
+  font-weight: 700;
+}
+.btn:hover {
+  border: 1px solid #6d72de;
+  background: #fff;
+  color: #6d72de;
+  cursor: pointer;
+}
+.btn-custom:hover {
+  background: linear-gradient(135deg, #a2a7f0 0%, #696edd 100%);
+  color: #ffffff;
+  border: 1px solid #fff;
+}
+/* Feel free to remove these styles or customise in your own stylesheet */
+.attribution {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 1080px) {
+  .container {
+    margin: 5rem 0;
+  }
+  .main-content {
+    flex-direction: column;
+  }
+  .price-box {
+    margin: 2rem 0;
+  }
+}
