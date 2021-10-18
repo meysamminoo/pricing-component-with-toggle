@@ -83,7 +83,7 @@ body {
   height: 2.4rem;
   position: absolute;
   border-radius: 50%;
-  left: 0.4rem;
+  right: 0.4rem;
   top: 0.4rem;
   background-color: #fff;
   -webkit-transition: 0.4s;
@@ -91,9 +91,9 @@ body {
 }
 /* move switch */
 input:checked + .slider:before {
-  -webkit-transform: translateX(2.4rem);
-  -ms-transform: translateX(2.4rem);
-  transform: translateX(2.4rem);
+  -webkit-transform: translateX(-2.4rem);
+  -ms-transform: translateX(-2.4rem);
+  transform: translateX(-2.4rem);
 }
 /* main content */
 .main-content {
@@ -145,7 +145,7 @@ input:checked + .slider:before {
   align-items: center;
   justify-content: center;
 }
-.price-month {
+.price-year {
   display: none;
 }
 .price p {
