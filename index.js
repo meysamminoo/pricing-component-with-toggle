@@ -8,20 +8,20 @@ window.onload = function(){
   function changePrice() {
     if(checkbox.checked){
       for (let i = 0; i < priceYear.length; i++) {
-        priceYear[i].style.display = "none";
+        priceYear[i].style.display = "block";
         
       }
-      for (let i = 0; i < priceMonth.length; i++) {
-        priceMonth[i].style.display = "block";
-        
-      }
-    } else {
       for (let i = 0; i < priceMonth.length; i++) {
         priceMonth[i].style.display = "none";
         
       }
+    } else {
+      for (let i = 0; i < priceMonth.length; i++) {
+        priceMonth[i].style.display = "block";
+        
+      }
       for (let i = 0; i < priceYear.length; i++) {
-        priceYear[i].style.display = "block";
+        priceYear[i].style.display = "none";
         
       }
     }
