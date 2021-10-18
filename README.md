@@ -13,8 +13,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL ](https://your-solution-url.com)
-- Live Site URL: [Live site URL ](https://your-live-site-url.com)
+- Solution URL: [Solution URL ](https://github.com/meysamminoo/pricing-component-with-toggle)
+- Live Site URL: [Live site URL ](https://meysamminoo.github.io/pricing-component-with-toggle/)
 
 ### Built with
 
